@@ -80,6 +80,7 @@ Languages
 * Chinese (Native)
 * English (Professional working proficiency)
 
+{% comment %}
 Publications
 ======
 <ul>{% for post in site.publications reversed %}
@@ -97,3 +98,4 @@ Teaching
 <ul>{% for post in site.teaching reversed %}
   {% include archive-single-cv.html %}
 {% endfor %}</ul>
+{% endcomment %}
