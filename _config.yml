@@ -1,6 +1,6 @@
 # Basic Site Settings
 locale                   : "en-GB"
-site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "air" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "H Wang"
 title_separator          : "-"
 name                     : &name "H Wang"
@@ -15,10 +15,10 @@ repository               : "haoyyw/haoyyw.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png" # 暂时先保留这个文件名，后续上传同名头像即可
+  avatar           : "profile.png" 
   name             : "H Wang"
   pronouns         : "" # example: "she/her"  
-  bio              : "Haoyu Wang, also known as Jasper. PhD student at the University of Sheffield. Research interests include corporate finance, climate finance, and machine learning."
+  bio              : "Haoyu (Jasper) Wang. PhD student at the University of Sheffield. Research interests include corporate finance, climate finance, and machine learning."
   location         : "Sheffield, United Kingdom"
   employer         : "University of Sheffield"
   uri              : "" # 暂时没有 personal website
@@ -28,50 +28,50 @@ author:
   academia         : "" # 暂时没有
   arxiv            : "" # 暂时没有
   googlescholar    : "" # 暂时空着
-  inspire-hep      : "" # 暂时没有
-  impactstory      : "" # 暂时没有
+  # inspire-hep      : "" # 暂时没有
+  # impactstory      : "" # 暂时没有
   orcid            : "" # 暂时空着
-  semantic         : "" # 暂时没有
-  ssrn             : "" # 暂时空着
-  pubmed           : "" # 暂时没有
-  researchgate     : "" # 暂时空着
-  scopus           : "" # 暂时空着
+  # semantic         : "" # 暂时没有
+  # ssrn             : "" # 暂时空着
+  # pubmed           : "" # 暂时没有
+  # researchgate     : "" # 暂时空着
+  # scopus           : "" # 暂时空着
   zotero           : "" # 暂时没有
 
   # Repositories and software development
-  bitbucket        : "" # 暂时没有
-  codepen          : "" # 暂时没有
-  dribbble         : "" # 暂时没有
+  # bitbucket        : "" # 暂时没有
+  # codepen          : "" # 暂时没有
+  # dribbble         : "" # 暂时没有
   github           : "haoyyw"
-  kaggle           : "" # 暂时没有  
-  stackoverflow    : "" # 暂时没有
+  # kaggle           : "" # 暂时没有  
+  # stackoverflow    : "" # 暂时没有
 
   # Social media
-  artstation       : "" # 暂时没有
-  bluesky          : "" # 暂时没有
-  facebook         : "" # 暂时没有
-  flickr           : "" # 暂时没有
-  foursquare       : "" # 暂时没有
-  goodreads        : "" # 暂时没有
-  google_plus      : "" # 暂时没有
-  keybase          : "" # 暂时没有
-  instagram        : "" # 暂时没有
-  lastfm           : "" # 暂时没有
-  linkedin         : "" # 暂时空着
-  mastodon         : "" # 暂时没有
-  medium           : "" # 暂时没有
-  pinterest        : "" # 暂时没有
-  soundcloud       : "" # 暂时没有
-  steam            : "" # 暂时没有
-  telegram         : "" # 暂时没有
-  tumblr           : "" # 暂时没有
-  twitter          : "" # 暂时空着
-  vine             : "" # 暂时没有
-  weibo            : "" # 暂时空着
-  wikipedia        : "" # 暂时没有
-  xing             : "" # 暂时没有
-  youtube          : "" # 暂时空着
-  zhihu            : "" # 暂时空着
+  # artstation       : "" # 暂时没有
+  # bluesky          : "" # 暂时没有
+  # facebook         : "" # 暂时没有
+  # flickr           : "" # 暂时没有
+  # foursquare       : "" # 暂时没有
+  # goodreads        : "" # 暂时没有
+  # google_plus      : "" # 暂时没有
+  # keybase          : "" # 暂时没有
+  # instagram        : "" # 暂时没有
+  # lastfm           : "" # 暂时没有
+  linkedin         : "www.linkedin.com/in/haoyu-jasper-wang-haoyyw"
+  # mastodon         : "" # 暂时没有
+  # medium           : "" # 暂时没有
+  # pinterest        : "" # 暂时没有
+  # soundcloud       : "" # 暂时没有
+  # steam            : "" # 暂时没有
+  # telegram         : "" # 暂时没有
+  # tumblr           : "" # 暂时没有
+  # twitter          : "" # 暂时空着
+  # vine             : "" # 暂时没有
+  # weibo            : "" # 暂时空着
+  # wikipedia        : "" # 暂时没有
+  # xing             : "" # 暂时没有
+  # youtube          : "" # 暂时空着
+  # zhihu            : "" # 暂时空着
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
