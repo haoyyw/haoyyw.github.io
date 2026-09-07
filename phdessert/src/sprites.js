@@ -20,21 +20,26 @@ const SPRITE_CHUNKS = {
   ]
 };
 
-function cleanBase64(text) {
-  return text.replace(/[^A-Za-z0-9+/=]/g, '');
+function normaliseBase64(text) {
+  let encoded = text.replace(/[^A-Za-z0-9+/=]/g, '').replace(/=+$/g, '');
+  if (!encoded) throw new Error('Empty image asset');
+
+  const remainder = encoded.length % 4;
+  if (remainder === 1) {
+    encoded = encoded.slice(0, -1);
+  }
+  while (encoded.length % 4 !== 0) encoded += '=';
+  return encoded;
 }
 
 async function fetchAsset(paths) {
   const parts = await Promise.all(paths.map(async (path) => {
-    const response = await fetch(path, { cache: 'force-cache' });
+    const response = await fetch(path, { cache: 'no-cache' });
     if (!response.ok) throw new Error(`Unable to load image asset: ${path}`);
     return response.text();
   }));
 
-  const encoded = cleanBase64(parts.join(''));
-  if (!encoded || encoded.length % 4 !== 0) {
-    throw new Error(`Invalid base64 image asset (${encoded.length} characters)`);
-  }
+  const encoded = normaliseBase64(parts.join(''));
   return `data:image/avif;base64,${encoded}`;
 }
 
@@ -46,4 +51,4 @@ export async function loadSprites() {
   return { products, campaign };
 }
 
-export { SPRITE_CHUNKS, cleanBase64 };
+export { SPRITE_CHUNKS, normaliseBase64 };
