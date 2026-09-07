@@ -1,0 +1,1 @@
+This repair uses repository-native text updates plus image assets. Temporary files will be cleaned after verification.
