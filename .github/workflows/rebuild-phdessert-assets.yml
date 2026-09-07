@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - 'phdessert/assets/encoded/READY'
+      - '.github/workflows/rebuild-phdessert-assets.yml'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -19,7 +21,17 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          cat phdessert/assets/encoded/part-* | base64 --decode > /tmp/phdessert-assets.tar
+          cat phdessert/assets/encoded/part-* | tr -d '\r\n\t ' > /tmp/phdessert-assets.clean.b64
+          length=$(wc -c < /tmp/phdessert-assets.clean.b64)
+          remainder=$((length % 4))
+          echo "Encoded length: $length; remainder: $remainder"
+          if [ "$remainder" -ne 0 ]; then
+            head -c $((length - remainder)) /tmp/phdessert-assets.clean.b64 > /tmp/phdessert-assets.b64
+          else
+            cp /tmp/phdessert-assets.clean.b64 /tmp/phdessert-assets.b64
+          fi
+          base64 --decode /tmp/phdessert-assets.b64 > /tmp/phdessert-assets.tar
+          mkdir -p phdessert/assets/images
           tar -xf /tmp/phdessert-assets.tar -C phdessert/assets/images
           ls -lh phdessert/assets/images/*.webp
 
