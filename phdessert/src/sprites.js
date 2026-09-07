@@ -20,16 +20,22 @@ const SPRITE_CHUNKS = {
   ]
 };
 
-function normaliseBase64(text) {
-  let encoded = text.replace(/[^A-Za-z0-9+/=]/g, '').replace(/=+$/g, '');
-  if (!encoded) throw new Error('Empty image asset');
+function cleanBase64(text) {
+  return text.replace(/[^A-Za-z0-9+/=]/g, '');
+}
 
-  const remainder = encoded.length % 4;
-  if (remainder === 1) {
-    encoded = encoded.slice(0, -1);
+function padBase64(text) {
+  const remainder = text.length % 4;
+  return remainder ? text + '='.repeat(4 - remainder) : text;
+}
+
+function base64ToBlobUrl(encoded, mimeType = 'image/avif') {
+  const binary = atob(padBase64(cleanBase64(encoded)));
+  const bytes = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i += 1) {
+    bytes[i] = binary.charCodeAt(i);
   }
-  while (encoded.length % 4 !== 0) encoded += '=';
-  return encoded;
+  return URL.createObjectURL(new Blob([bytes], { type: mimeType }));
 }
 
 async function fetchAsset(paths) {
@@ -39,8 +45,11 @@ async function fetchAsset(paths) {
     return response.text();
   }));
 
-  const encoded = normaliseBase64(parts.join(''));
-  return `data:image/avif;base64,${encoded}`;
+  const encoded = parts.join('');
+  if (!cleanBase64(encoded)) {
+    throw new Error('Image asset is empty');
+  }
+  return base64ToBlobUrl(encoded, 'image/avif');
 }
 
 export async function loadSprites() {
@@ -51,4 +60,4 @@ export async function loadSprites() {
   return { products, campaign };
 }
 
-export { SPRITE_CHUNKS, normaliseBase64 };
+export { SPRITE_CHUNKS, cleanBase64, padBase64, base64ToBlobUrl };
