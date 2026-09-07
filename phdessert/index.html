@@ -14,32 +14,190 @@
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
   <header class="site-header">
     <div class="shell header-main">
-      <a class="brand" href="#home" aria-label="PhDessert home"><span class="brand-monogram" aria-hidden="true">Ph</span><span class="brand-copy"><span class="brand-name">PhDessert</span><span class="brand-descriptor">匠心手作 · HANDCRAFTED</span></span></a>
-      <div class="header-actions"><button id="languageToggle" class="language-toggle" type="button" aria-label="Switch language"><span class="lang-en is-active">EN</span><span aria-hidden="true">/</span><span class="lang-zh">中文</span></button><button class="text-button order-trigger" type="button" data-product="" data-i18n="nav.order">Order</button></div>
+      <a class="brand" href="#home" aria-label="PhDessert home">
+        <span class="brand-monogram" aria-hidden="true">Ph</span>
+        <span class="brand-copy">
+          <span class="brand-name">PhDessert</span>
+          <span class="brand-descriptor">匠心手作 · HANDCRAFTED</span>
+        </span>
+      </a>
+      <div class="header-actions">
+        <button id="languageToggle" class="language-toggle" type="button" aria-label="Switch language">
+          <span class="lang-en is-active">EN</span><span aria-hidden="true">/</span><span class="lang-zh">中文</span>
+        </button>
+        <button class="text-button order-trigger" type="button" data-product="" data-i18n="nav.order">Order / Enquire</button>
+      </div>
     </div>
-    <nav class="category-nav shell" aria-label="Menu sections"><a href="#chinese" data-open-section="chinese" data-i18n="nav.chinese">Chinese</a><a href="#patisserie" data-open-section="patisserie" data-i18n="nav.patisserie">Pâtisserie</a><a href="#basque" data-open-section="basque" data-i18n="nav.basque">Basque</a><a href="#cakes" data-open-section="cakes" data-i18n="nav.cakes">Cakes</a><a href="#small-desserts" data-open-section="small-desserts" data-i18n="nav.small">Small Desserts</a><a href="#seasonal" data-i18n="nav.seasonal">Seasonal</a><a href="#about" data-i18n="nav.about">About</a></nav>
+    <nav class="category-nav shell" aria-label="Menu sections">
+      <a href="#chinese" data-open-section="chinese" data-i18n="nav.chinese">Chinese</a>
+      <a href="#patisserie" data-open-section="patisserie" data-i18n="nav.patisserie">Pâtisserie</a>
+      <a href="#basque" data-open-section="basque" data-i18n="nav.basque">Basque</a>
+      <a href="#cakes" data-open-section="cakes" data-i18n="nav.cakes">Cakes</a>
+      <a href="#small-desserts" data-open-section="small-desserts" data-i18n="nav.small">Small Desserts</a>
+      <a href="#seasonal" data-i18n="nav.seasonal">Seasonal</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+    </nav>
   </header>
+
   <main id="main">
     <section id="home" class="hero">
       <div id="heroTrack" class="hero-track" aria-live="polite">
-        <article class="hero-slide is-active" data-slide="0"><img src="assets/campaigns/brand-original.webp" alt="PhDessert handcrafted campaign artwork"><div class="hero-shade"></div><div class="shell hero-copy"><p class="eyebrow" data-i18n="hero1.kicker">Sheffield · Small batch</p><h1 data-i18n="hero1.title">Desserts, made with intention.</h1><p data-i18n="hero1.body">Handcrafted pastries, cakes and small desserts, made in Sheffield with a lighter touch and a careful eye for detail.</p><div class="hero-actions"><a class="button button-light" href="#menu" data-i18n="hero1.cta">Explore the menu</a><button class="button button-outline order-trigger" type="button" data-product="" data-i18n="nav.order">Order / Enquire</button></div></div></article>
-        <article class="hero-slide" data-slide="1" aria-hidden="true"><img src="assets/campaigns/chinese-handcrafted.webp" alt="Chinese handcrafted pastries styled for PhDessert"><div class="hero-shade"></div><div class="shell hero-copy"><p class="eyebrow" data-i18n="hero2.kicker">Chinese handcrafted</p><h2 data-i18n="hero2.title">Familiar flavours, quietly refined.</h2><p data-i18n="hero2.body">Peach blossom pastry, osmanthus cake, taro pastry and more, handmade in small batches in Sheffield.</p><a class="button button-light" href="#chinese" data-open-section="chinese" data-i18n="hero2.cta">Discover the collection</a></div></article>
-        <article class="hero-slide" data-slide="2" aria-hidden="true"><img src="assets/campaigns/seasonal-edit.webp" alt="PhDessert seasonal cakes with figs, citrus and fruit"><div class="hero-shade"></div><div class="shell hero-copy"><p class="eyebrow" data-i18n="hero3.kicker">Seasonal edit</p><h2 data-i18n="hero3.title">A short menu for the moment.</h2><p data-i18n="hero3.body">Fig, citrus and berry-led pieces rotate with the season and weekly availability.</p><a class="button button-light" href="#seasonal" data-i18n="hero3.cta">See the seasonal edit</a></div></article>
+        <article class="hero-slide is-active" data-slide="0">
+          <div class="campaign-art campaign-brand" role="img" aria-label="PhDessert handcrafted campaign artwork"></div>
+          <div class="hero-shade"></div>
+          <div class="shell hero-copy">
+            <p class="eyebrow" data-i18n="hero1.kicker">Sheffield · Small batch</p>
+            <h1 data-i18n="hero1.title">Desserts, made with intention.</h1>
+            <p data-i18n="hero1.body">Handcrafted pastries, cakes and small desserts, made in Sheffield with a lighter touch and a careful eye for detail.</p>
+            <div class="hero-actions">
+              <a class="button button-light" href="#menu" data-i18n="hero1.cta">Explore the menu</a>
+              <button class="button button-outline order-trigger" type="button" data-product="" data-i18n="nav.order">Order / Enquire</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hero-slide" data-slide="1" aria-hidden="true">
+          <div class="campaign-art campaign-chinese" role="img" aria-label="Chinese handcrafted pastries styled for PhDessert"></div>
+          <div class="hero-shade"></div>
+          <div class="shell hero-copy">
+            <p class="eyebrow" data-i18n="hero2.kicker">Chinese handcrafted</p>
+            <h2 data-i18n="hero2.title">Familiar flavours, quietly refined.</h2>
+            <p data-i18n="hero2.body">Peach blossom pastry, osmanthus cake, taro pastry and more, handmade in small batches in Sheffield.</p>
+            <a class="button button-light" href="#chinese" data-open-section="chinese" data-i18n="hero2.cta">Discover the collection</a>
+          </div>
+        </article>
+
+        <article class="hero-slide" data-slide="2" aria-hidden="true">
+          <div class="campaign-art campaign-seasonal" role="img" aria-label="PhDessert seasonal cakes with figs, citrus and fruit"></div>
+          <div class="hero-shade"></div>
+          <div class="shell hero-copy">
+            <p class="eyebrow" data-i18n="hero3.kicker">Seasonal edit</p>
+            <h2 data-i18n="hero3.title">A short menu for the moment.</h2>
+            <p data-i18n="hero3.body">Fig, citrus and berry-led pieces rotate with the season and weekly availability.</p>
+            <a class="button button-light" href="#seasonal" data-i18n="hero3.cta">See the seasonal edit</a>
+          </div>
+        </article>
       </div>
-      <div class="hero-controls shell"><button id="heroPrev" class="hero-arrow" type="button" aria-label="Previous slide">←</button><div id="heroDots" class="hero-dots" aria-label="Hero slides"><button class="is-active" type="button" data-slide-to="0" aria-label="Slide 1"></button><button type="button" data-slide-to="1" aria-label="Slide 2"></button><button type="button" data-slide-to="2" aria-label="Slide 3"></button></div><button id="heroNext" class="hero-arrow" type="button" aria-label="Next slide">→</button></div>
+      <div class="hero-controls shell">
+        <button id="heroPrev" class="hero-arrow" type="button" aria-label="Previous slide">←</button>
+        <div id="heroDots" class="hero-dots" aria-label="Hero slides">
+          <button class="is-active" type="button" data-slide-to="0" aria-label="Slide 1"></button>
+          <button type="button" data-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <button id="heroNext" class="hero-arrow" type="button" aria-label="Next slide">→</button>
+      </div>
     </section>
-    <section id="menu" class="menu-intro section"><div class="shell intro-grid reveal"><div><p class="eyebrow dark" data-i18n="menu.kicker">The menu</p><h2 data-i18n="menu.title">Made by hand, one collection at a time.</h2></div><p data-i18n="menu.body">Open a collection to explore the current menu. Availability is confirmed when you enquire.</p></div></section>
+
+    <section id="menu" class="menu-intro section">
+      <div class="shell intro-grid reveal">
+        <div><p class="eyebrow dark" data-i18n="menu.kicker">The menu</p><h2 data-i18n="menu.title">Made by hand, one collection at a time.</h2></div>
+        <p data-i18n="menu.body">Open a collection to explore the current menu. Availability is confirmed when you enquire.</p>
+      </div>
+    </section>
+
     <section id="menuSections" class="menu-sections" aria-label="Dessert menu"></section>
-    <section id="seasonal" class="seasonal section"><div class="shell"><div class="seasonal-head reveal"><div><p class="eyebrow dark" data-i18n="seasonal.kicker">Seasonal edit</p><h2 data-i18n="seasonal.title">Fruit-led pieces, available for a little while.</h2></div><p data-i18n="seasonal.body">The seasonal edit changes with fruit quality and weekly availability. Ask what is available when you order.</p></div><div class="seasonal-layout reveal"><figure class="seasonal-campaign"><img src="assets/campaigns/seasonal-edit.webp" alt="PhDessert seasonal edit"></figure><div id="seasonalCards" class="seasonal-cards"></div></div></div></section>
-    <section class="ingredients section"><div class="shell ingredients-grid reveal"><p class="eyebrow dark" data-i18n="ingredients.kicker">Ingredients</p><div><h2 data-i18n="ingredients.title">Fresh ingredients. Consistent quality.</h2><p data-i18n="ingredients.body">Our everyday baking ingredients are selected from Costco UK, with freshness, consistency and quality guiding every batch.</p></div></div></section>
-    <section id="about" class="about section-dark section"><div class="shell about-grid"><figure class="about-logo reveal"><img src="assets/campaigns/brand-logo.webp" alt="PhDessert logo, 匠心手作 · Handcrafted"></figure><div class="about-copy reveal"><p class="eyebrow" data-i18n="about.kicker">Our story</p><h2 data-i18n="about.title">A Chinese-founded dessert studio, made in Sheffield.</h2><p data-i18n="about.body1">PhDessert began as a small-batch kitchen shaped by home flavours, pastry craft and a researcher’s attention to detail. The menu moves naturally between Chinese pastries, pâtisserie and contemporary cakes.</p><p data-i18n="about.body2">The PhD reference stays quietly in the name and the tiny graduation cap. Everything else is about flavour, texture and the pleasure of something made by hand.</p></div></div></section>
-    <section id="order" class="order section"><div class="shell"><div class="order-heading reveal"><div><p class="eyebrow dark" data-i18n="order.kicker">Order & pickup</p><h2 data-i18n="order.title">Small batches. Advance booking.</h2></div><button class="button button-dark order-trigger" type="button" data-product="" data-i18n="nav.order">Order / Enquire</button></div><div class="process-grid"><article class="process-card reveal"><span>01</span><h3 data-i18n="order.advance.title">Book ahead</h3><p data-i18n="order.advance.body">Desserts are prepared in small batches. Advance booking helps secure your preferred collection date.</p></article><article class="process-card reveal"><span>02</span><h3 data-i18n="order.pickup.title">Sheffield collection</h3><p data-i18n="order.pickup.body">Collection is in Sheffield. Exact details are shared after the order is confirmed.</p></article><article class="process-card reveal"><span>03</span><h3 data-i18n="order.custom.title">Custom requests</h3><p data-i18n="order.custom.body">For celebration cakes, flavours and finishing details can be discussed when you enquire.</p></article></div></div></section>
-    <section id="faq" class="faq section"><div class="shell faq-grid"><div class="reveal"><p class="eyebrow dark">FAQ</p><h2 data-i18n="faq.title">A few useful details.</h2></div><div id="faqList" class="faq-list reveal"><article class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a1"><span data-i18n="faq.q1">How do I place an order?</span><span>＋</span></button><div id="faq-a1" class="faq-answer" hidden><p data-i18n="faq.a1"></p></div></article><article class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a2"><span data-i18n="faq.q2">How much notice do you need?</span><span>＋</span></button><div id="faq-a2" class="faq-answer" hidden><p data-i18n="faq.a2"></p></div></article><article class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a3"><span data-i18n="faq.q3">Can I request a custom cake?</span><span>＋</span></button><div id="faq-a3" class="faq-answer" hidden><p data-i18n="faq.a3"></p></div></article><article class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a4"><span data-i18n="faq.q4">What about allergies?</span><span>＋</span></button><div id="faq-a4" class="faq-answer" hidden><p data-i18n="faq.a4"></p></div></article></div></div></section>
+
+    <section id="seasonal" class="seasonal section">
+      <div class="shell">
+        <div class="seasonal-head reveal">
+          <div><p class="eyebrow dark" data-i18n="seasonal.kicker">Seasonal edit</p><h2 data-i18n="seasonal.title">Fruit-led pieces, available for a little while.</h2></div>
+          <p data-i18n="seasonal.body">The seasonal edit changes with fruit quality and weekly availability. Ask what is available when you order.</p>
+        </div>
+        <div class="seasonal-layout reveal">
+          <figure class="seasonal-campaign"><div class="campaign-art campaign-seasonal" role="img" aria-label="PhDessert seasonal edit"></div></figure>
+          <div id="seasonalCards" class="seasonal-cards"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ingredients section">
+      <div class="shell ingredients-grid reveal">
+        <p class="eyebrow dark" data-i18n="ingredients.kicker">Ingredients</p>
+        <div><h2 data-i18n="ingredients.title">Fresh ingredients. Consistent quality.</h2><p data-i18n="ingredients.body">Our everyday baking ingredients are selected from Costco UK, with freshness, consistency and quality guiding every batch.</p></div>
+      </div>
+    </section>
+
+    <section id="about" class="about section-dark section">
+      <div class="shell about-grid">
+        <figure class="about-logo reveal"><div class="campaign-art campaign-logo" role="img" aria-label="PhDessert logo, 匠心手作 · HANDCRAFTED"></div></figure>
+        <div class="about-copy reveal">
+          <p class="eyebrow" data-i18n="about.kicker">Our story</p>
+          <h2 data-i18n="about.title">A Chinese-founded dessert studio, made in Sheffield.</h2>
+          <p data-i18n="about.body1">PhDessert began as a small-batch kitchen shaped by home flavours, pastry craft and a researcher’s attention to detail. The menu moves naturally between Chinese pastries, pâtisserie and contemporary cakes.</p>
+          <p data-i18n="about.body2">The PhD reference stays quietly in the name and the tiny graduation cap. Everything else is about flavour, texture and the pleasure of something made by hand.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="order" class="order section">
+      <div class="shell">
+        <div class="order-heading reveal">
+          <div><p class="eyebrow dark" data-i18n="order.kicker">Order & pickup</p><h2 data-i18n="order.title">Small batches. Advance booking.</h2></div>
+          <button class="button button-dark order-trigger" type="button" data-product="" data-i18n="nav.order">Order / Enquire</button>
+        </div>
+        <div class="process-grid">
+          <article class="process-card reveal"><span>01</span><h3 data-i18n="order.advance.title">Book ahead</h3><p data-i18n="order.advance.body">Desserts are prepared in small batches. Advance booking helps secure your preferred collection date.</p></article>
+          <article class="process-card reveal"><span>02</span><h3 data-i18n="order.pickup.title">Sheffield collection</h3><p data-i18n="order.pickup.body">Collection is in Sheffield. Exact details are shared after the order is confirmed.</p></article>
+          <article class="process-card reveal"><span>03</span><h3 data-i18n="order.custom.title">Custom requests</h3><p data-i18n="order.custom.body">For celebration cakes, flavours and finishing details can be discussed when you enquire.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq section">
+      <div class="shell faq-grid">
+        <div class="reveal"><p class="eyebrow dark">FAQ</p><h2 data-i18n="faq.title">A few useful details.</h2></div>
+        <div id="faqList" class="faq-list reveal">
+          <article class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a1"><span data-i18n="faq.q1">How do I place an order?</span><span>＋</span></button><div id="faq-a1" class="faq-answer" hidden><p data-i18n="faq.a1"></p></div></article>
+          <article class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a2"><span data-i18n="faq.q2">How much notice do you need?</span><span>＋</span></button><div id="faq-a2" class="faq-answer" hidden><p data-i18n="faq.a2"></p></div></article>
+          <article class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a3"><span data-i18n="faq.q3">Can I request a custom cake?</span><span>＋</span></button><div id="faq-a3" class="faq-answer" hidden><p data-i18n="faq.a3"></p></div></article>
+          <article class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a4"><span data-i18n="faq.q4">What about allergies?</span><span>＋</span></button><div id="faq-a4" class="faq-answer" hidden><p data-i18n="faq.a4"></p></div></article>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer section-dark"><div class="shell footer-grid"><div><span class="brand-name">PhDessert</span><span class="footer-lockup">匠心手作 · HANDCRAFTED</span></div><p data-i18n="footer.line">Handmade in Sheffield · Small batch · Sweetly yours</p><p>© <span id="copyrightYear">2026</span> PhDessert</p></div></footer>
-  <dialog id="orderModal" class="order-modal" aria-labelledby="orderModalTitle"><div class="modal-shell"><button id="modalClose" class="modal-close" type="button" aria-label="Close">×</button><div class="modal-heading"><p class="eyebrow dark" data-i18n="modal.kicker">Order enquiry</p><h2 id="orderModalTitle" data-i18n="modal.title">Reserve a collection slot</h2><p data-i18n="modal.body">Choose a dessert and collection date. Availability is confirmed before the order is finalised.</p></div><form id="orderForm" novalidate><div class="form-grid"><div class="field"><label for="orderProduct" data-i18n="form.product">Dessert</label><select id="orderProduct" name="product" required><option value="" data-i18n="form.select">Please select</option></select><span class="field-error" data-error-for="product"></span></div><div class="field"><label for="orderSize" data-i18n="form.size">Format / size</label><select id="orderSize" name="size" required><option value="" data-i18n="form.select">Please select</option><option value="Single / portion" data-i18n="form.size.single">Single / portion</option><option value="Dessert box" data-i18n="form.size.box">Dessert box</option><option value="4-inch" data-i18n="form.size.4">4-inch</option><option value="6-inch" data-i18n="form.size.6">6-inch</option><option value="Other / discuss" data-i18n="form.size.other">Other / discuss</option></select><span class="field-error" data-error-for="size"></span></div><div class="field"><label for="orderDate" data-i18n="form.date">Collection date</label><input id="orderDate" name="date" type="date" required><span class="field-error" data-error-for="date"></span></div><div class="field"><label for="orderName" data-i18n="form.name">Name</label><input id="orderName" name="name" type="text" autocomplete="name" required><span class="field-error" data-error-for="name"></span></div><div class="field field-full"><label for="orderContact" data-i18n="form.contact">Contact / WeChat</label><input id="orderContact" name="contact" type="text" required><span class="field-error" data-error-for="contact"></span></div><div class="field field-full"><label for="orderNotes" data-i18n="form.notes">Notes</label><textarea id="orderNotes" name="notes" rows="4" data-i18n-placeholder="form.notes.placeholder"></textarea></div></div><label class="consent-row"><input name="consent" type="checkbox"><span data-i18n="form.consent">I understand this is an enquiry and availability must be confirmed.</span></label><span class="field-error consent-error" data-error-for="consent"></span><div class="form-actions"><button class="button button-dark" type="submit" data-i18n="form.submit">Create enquiry</button><button id="modalCancel" class="button button-quiet" type="button" data-i18n="form.cancel">Cancel</button></div></form><section id="orderResult" class="order-result" hidden tabindex="-1"><p class="eyebrow dark" data-i18n="result.kicker">Ready to send</p><h3 data-i18n="result.title">Your enquiry is ready.</h3><pre id="orderSummary"></pre><div class="form-actions"><button id="copyOrder" class="button button-dark" type="button" data-i18n="result.copy">Copy enquiry</button><a id="emailOrder" class="button button-quiet" href="#" hidden>Email</a><button id="editOrder" class="button button-quiet" type="button" data-i18n="result.edit">Edit</button></div></section></div></dialog>
+
+  <footer class="site-footer section-dark">
+    <div class="shell footer-grid">
+      <div><span class="brand-name">PhDessert</span><span class="footer-lockup">匠心手作 · HANDCRAFTED</span></div>
+      <p data-i18n="footer.line">Handmade in Sheffield · Small batch · Sweetly yours</p>
+      <p>© <span id="copyrightYear">2026</span> PhDessert</p>
+    </div>
+  </footer>
+
+  <dialog id="orderModal" class="order-modal" aria-labelledby="orderModalTitle">
+    <div class="modal-shell">
+      <button id="modalClose" class="modal-close" type="button" aria-label="Close">×</button>
+      <div class="modal-heading">
+        <p class="eyebrow dark" data-i18n="modal.kicker">Order enquiry</p>
+        <h2 id="orderModalTitle" data-i18n="modal.title">Reserve a collection slot</h2>
+        <p data-i18n="modal.body">Choose a dessert and collection date. Availability is confirmed before the order is finalised.</p>
+      </div>
+      <form id="orderForm" novalidate>
+        <div class="form-grid">
+          <div class="field"><label for="orderProduct" data-i18n="form.product">Dessert</label><select id="orderProduct" name="product" required><option value="" data-i18n="form.select">Please select</option></select><span class="field-error" data-error-for="product"></span></div>
+          <div class="field"><label for="orderSize" data-i18n="form.size">Format / size</label><select id="orderSize" name="size" required><option value="" data-i18n="form.select">Please select</option><option value="Single / portion" data-i18n="form.size.single">Single / portion</option><option value="Dessert box" data-i18n="form.size.box">Dessert box</option><option value="4-inch" data-i18n="form.size.4">4-inch</option><option value="6-inch" data-i18n="form.size.6">6-inch</option><option value="Other / discuss" data-i18n="form.size.other">Other / discuss</option></select><span class="field-error" data-error-for="size"></span></div>
+          <div class="field"><label for="orderDate" data-i18n="form.date">Collection date</label><input id="orderDate" name="date" type="date" required><span class="field-error" data-error-for="date"></span></div>
+          <div class="field"><label for="orderName" data-i18n="form.name">Name</label><input id="orderName" name="name" type="text" autocomplete="name" required><span class="field-error" data-error-for="name"></span></div>
+          <div class="field field-full"><label for="orderContact" data-i18n="form.contact">Contact / WeChat</label><input id="orderContact" name="contact" type="text" required><span class="field-error" data-error-for="contact"></span></div>
+          <div class="field field-full"><label for="orderNotes" data-i18n="form.notes">Notes</label><textarea id="orderNotes" name="notes" rows="4" data-i18n-placeholder="form.notes.placeholder"></textarea></div>
+        </div>
+        <label class="consent-row"><input name="consent" type="checkbox"><span data-i18n="form.consent">I understand this is an enquiry and availability must be confirmed.</span></label>
+        <span class="field-error consent-error" data-error-for="consent"></span>
+        <div class="form-actions"><button class="button button-dark" type="submit" data-i18n="form.submit">Create enquiry</button><button id="modalCancel" class="button button-quiet" type="button" data-i18n="form.cancel">Cancel</button></div>
+      </form>
+      <section id="orderResult" class="order-result" hidden tabindex="-1">
+        <p class="eyebrow dark" data-i18n="result.kicker">Ready to send</p>
+        <h3 data-i18n="result.title">Your enquiry is ready.</h3>
+        <pre id="orderSummary"></pre>
+        <div class="form-actions"><button id="copyOrder" class="button button-dark" type="button" data-i18n="result.copy">Copy enquiry</button><a id="emailOrder" class="button button-quiet" href="#" hidden>Email</a><button id="editOrder" class="button button-quiet" type="button" data-i18n="result.edit">Edit</button></div>
+      </section>
+    </div>
+  </dialog>
+
   <script type="module" src="src/app.js"></script>
 </body>
 </html>
