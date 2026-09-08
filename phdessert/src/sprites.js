@@ -10,7 +10,10 @@ const SPRITE_CHUNKS = {
     'assets/data/products-07.txt',
     'assets/data/products-08.txt',
     'assets/data/products-09.txt',
-    'assets/data/products-10.txt',
+    'assets/data/products-fix10-0.txt',
+    'assets/data/products-fix10-1.txt',
+    'assets/data/products-fix10-2.txt',
+    'assets/data/products-fix10-3.txt',
     'assets/data/products-11.txt'
   ],
   campaign: [
@@ -40,7 +43,6 @@ function base64ToBlobUrl(encoded, mimeType = 'image/avif') {
     bytes[i] = binary.charCodeAt(i);
   }
 
-  // AVIF/HEIF files use an ISO BMFF ftyp box near the beginning.
   const header = String.fromCharCode(...bytes.slice(4, 12));
   if (!header.includes('ftyp')) {
     throw new Error('Decoded image asset does not have a valid AVIF container header');
@@ -52,9 +54,9 @@ function base64ToBlobUrl(encoded, mimeType = 'image/avif') {
 function repairProductChunk(path, text) {
   let cleaned = cleanBase64(text);
 
-  // products-05 lost exactly one Base64 character during the original
-  // GitHub text upload. The expected source was compared byte-for-byte
-  // against the published chunks; the missing character is deterministic.
+  // The originally published products-05 chunk lost exactly one Base64
+  // character. Comparison against the validated source identifies the
+  // missing character and position deterministically.
   if (path.endsWith('products-05.txt') && cleaned.length === 15999) {
     cleaned = cleaned.slice(0, PRODUCT_05_REPAIR_INDEX)
       + PRODUCT_05_REPAIR_CHARACTER
