@@ -1,1 +1,0 @@
-Temporary encoded chunks used once to reconstruct the photographic WebP assets.

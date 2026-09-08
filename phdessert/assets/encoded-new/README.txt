@@ -1,1 +1,0 @@
-Temporary base64 chunks for the updated high-resolution PhDessert logo and campaign artwork. Decoded once by GitHub Actions into WebP assets.
